@@ -76,10 +76,10 @@ public class IntegerSelectionSorter {
             Integer innerLength = outerLength-1;
             for(int x=0; x < innerLength-1; x++){
                 Integer currentValue = integers.get(x);
-                Integer valueAtMinimumIndex = integers.get(minimumIndex);
-                if(currentValue < valueAtMinimumIndex){
+                if(currentValue < integers.get(minimumIndex)){
                     minimumIndex = x;
                 }
+                Integer valueAtMinimumIndex = integers.get(minimumIndex);
                 Integer temp = valueAtMinimumIndex;
                 integers.set(minimumIndex, currentValue);
                 integers.set(x, temp);
@@ -98,8 +98,6 @@ public class IntegerSelectionSorter {
             builder.append(integer + " ");
         return builder.toString().trim();
     }
-
-
 }
 ```
 

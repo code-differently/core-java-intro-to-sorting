@@ -65,7 +65,7 @@ public void sort(ArrayList<Integer> integers){
     Integer count = 0;
     Integer outerLength = integers.size();
     for (int i=0; i< outerLength-1; i++) {
-        Integer innerLength = outerLength-1;
+        Integer innerLength = outerLength;
         for(int x= 0; x < innerLength-1; x++){
             Integer a = integers.get(x);
             Integer b = integers.get(x+1);
